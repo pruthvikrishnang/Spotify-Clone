@@ -8,6 +8,8 @@ A pixel-perfect, production-quality, responsive **Spotify-inspired web music pla
 
 This is a pure frontend Single Page Application (SPA). It has **zero backend dependencies** and zero build compilation required to run, making it 100% compatible with static hosting environments like **GitHub Pages**.
 
+🔗 **Live Preview**: [Access the Spotify Clone Preview](https://pruthvikrishnang.github.io/Spotify-Clone/)
+
 ---
 
 ## ✨ Design & Experience Highlights
