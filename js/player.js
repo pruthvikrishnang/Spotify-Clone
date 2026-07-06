@@ -116,8 +116,18 @@ class AudioPlayer {
       this.handleTrackEnded();
     });
 
-    this.audio.addEventListener("error", (e) => {
-      console.error("Audio playback error details:", e);
+    this.audio.addEventListener("error", () => {
+      const err = this.audio.error;
+      let msg = "Unknown audio error";
+      if (err) {
+        switch (err.code) {
+          case err.MEDIA_ERR_ABORTED: msg = "Playback aborted by user"; break;
+          case err.MEDIA_ERR_NETWORK: msg = "Network error while downloading audio"; break;
+          case err.MEDIA_ERR_DECODE: msg = "Audio decoding failed (corrupt or unsupported format)"; break;
+          case err.MEDIA_ERR_SRC_NOT_SUPPORTED: msg = "Audio track format not supported or URL invalid"; break;
+        }
+      }
+      console.error(`Audio playback error: ${msg}`, err);
       this.isPlaying = false;
       this.trigger("playbackStateChanged", false);
     });
