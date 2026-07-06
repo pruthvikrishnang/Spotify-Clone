@@ -66,7 +66,7 @@ To run or build this application locally, ensure you have [Node.js](https://node
 ### 1. Installation
 Clone this repository and install the development dependencies (Vite server compiler):
 ```bash
-git clone https://github.com/YOUR_USERNAME/Spotify-Clone.git
+git clone https://github.com/pruthvikrishnang/Spotify-Clone.git
 cd Spotify-Clone
 npm install
 ```
