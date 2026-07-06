@@ -250,11 +250,13 @@ input, textarea {
   gap: var(--spacing-md);
   padding: var(--spacing-sm);
   border-radius: var(--border-radius-md);
-  transition: var(--transition-fast);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  transform: translateX(0);
 }
 
 .library-item a:hover {
   background-color: var(--bg-surface-hover);
+  transform: translateX(4px);
 }
 
 .library-item.active-item a {
