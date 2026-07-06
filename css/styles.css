@@ -2245,3 +2245,17 @@ input, textarea {
     display: none !important; /* Hide queue and volume controls on mobile */
   }
 }
+
+/* Micro-screens (Folded screens or very small mobile viewports) */
+@media (max-width: 360px) {
+  .detail-title {
+    font-size: 24px !important;
+  }
+  .user-profile-dropdown {
+    display: none !important;
+  }
+  .track-artwork-wrapper {
+    width: 42px !important;
+    height: 42px !important;
+  }
+}
