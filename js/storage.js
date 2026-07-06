@@ -17,6 +17,12 @@ const DEFAULT_GRADIENTS = [
   "linear-gradient(135deg, #4b0082 0%, #0000ff 100%)"
 ];
 
+/**
+ * Safely fetches and parses JSON data from LocalStorage.
+ * @param {string} key - The LocalStorage key to query.
+ * @param {*} defaultValue - Fallback value if key is not found or parsing fails.
+ * @returns {*} The parsed object or default fallback value.
+ */
 function getSafeJSON(key, defaultValue) {
   try {
     const data = localStorage.getItem(key);
@@ -27,6 +33,11 @@ function getSafeJSON(key, defaultValue) {
   }
 }
 
+/**
+ * Safely serializes and saves an object to LocalStorage.
+ * @param {string} key - The LocalStorage key to write to.
+ * @param {*} value - The JavaScript value/object to store.
+ */
 function setSafeJSON(key, value) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
