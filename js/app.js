@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("online", () => ui.showToast("Back online. Connected to streaming content."));
     window.addEventListener("offline", () => ui.showToast("Connection lost. Operating in offline mode.", true));
 
+    // Show initial offline warning if starting disconnected
+    if (!navigator.onLine) {
+      ui.showToast("You are currently offline. Playback may be limited.", true);
+    }
+
     console.log("Spotify Clone application successfully initialized.");
   } catch (error) {
     console.error("Critical error during application bootstrap:", error);
