@@ -1424,7 +1424,7 @@ input, textarea {
 
 /* Custom styles for Artist Banner header */
 .artist-banner-header {
-  height: 350px;
+  height: 350px; position: relative; overflow: hidden;
   width: calc(100% + (2 * var(--spacing-xl)));
   margin-top: calc(-1 * (var(--header-height) + var(--spacing-lg)));
   margin-left: calc(-1 * var(--spacing-xl));
@@ -2353,7 +2353,7 @@ input, textarea {
 }
 
 .skeleton-banner {
-  height: 350px;
+  height: 350px; position: relative; overflow: hidden;
   border-radius: var(--border-radius-lg);
   margin-bottom: var(--spacing-xl);
 }
