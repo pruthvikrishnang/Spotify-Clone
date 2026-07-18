@@ -167,7 +167,7 @@ input, textarea {
 
 .logo-svg {
   transition: transform var(--transition-normal), filter var(--transition-normal);
-  filter: drop-shadow(0 0 8px rgba(30, 215, 96, 0.3));
+  filter: drop-shadow(0 0 8px rgba(30, 215, 96, 0.3)); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link:hover .logo-svg {
