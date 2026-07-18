@@ -177,7 +177,7 @@ input, textarea {
 
 .logo-text {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.2);
   letter-spacing: -0.5px;
   color: var(--text-main);
   background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.8) 100%);
@@ -620,7 +620,7 @@ input, textarea {
 
 .welcome-title {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.2);
   margin-bottom: var(--spacing-lg);
   letter-spacing: -0.5px;
   background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.7) 100%);
@@ -711,7 +711,7 @@ input, textarea {
 
 .shelf-title {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.2);
   letter-spacing: -0.5px;
   background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.85) 100%);
   -webkit-background-clip: text;
@@ -881,7 +881,7 @@ input, textarea {
 
 .search-title {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.2);
   margin-bottom: var(--spacing-lg);
   letter-spacing: -0.5px;
   background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.85) 100%);
@@ -924,7 +924,7 @@ input, textarea {
 
 .category-title {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.2);
   letter-spacing: -0.5px;
   word-wrap: break-word;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -990,7 +990,7 @@ input, textarea {
 
 .top-result-name {
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.2);
   margin-bottom: var(--spacing-xs);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1320,7 +1320,7 @@ input, textarea {
 
 .detail-type {
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.2);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: var(--spacing-xs);
@@ -2019,7 +2019,7 @@ input, textarea {
 
 .modal-title {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.2);
 }
 
 .modal-close-btn {
