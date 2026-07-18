@@ -1187,7 +1187,7 @@ class UIManager {
     menu.style.padding = "4px 0";
     menu.style.zIndex = "1000";
     menu.style.width = "220px";
-    menu.style.animation = "fadeIn 0.15s ease-out forwards";
+    menu.style.animation = "pageEnter 0.15s ease-out forwards";
 
     // Playlists suboptions
     const playlists = storage.getPlaylists();
