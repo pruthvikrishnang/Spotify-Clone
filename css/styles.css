@@ -122,10 +122,10 @@ input, textarea {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.12));
-  border-radius: 10px;
+  border-radius: 10px; min-width: 4px;
   border: 2px solid transparent;
   background-clip: content-box;
-  transition: background var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
