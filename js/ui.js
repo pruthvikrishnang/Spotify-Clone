@@ -1380,17 +1380,20 @@ class UIManager {
       this.syncActiveTrackMetadata(track);
     });
 
-    // 2. Play state toggling (Play/Pause button icons & EQ lines animation)
+    // 2. Play state toggling (Play/Pause button icons, EQ lines animation & vinyl rotation)
     player.subscribe("playbackStateChanged", (isPlaying) => {
       const playBtn = document.getElementById("player-play-btn");
       const eqAnim = document.getElementById("playing-eq-animation");
+      const artworkWrapper = document.querySelector(".track-artwork-wrapper");
 
       if (isPlaying) {
         playBtn.innerHTML = `<i data-lucide="pause" fill="black" style="width: 18px; height: 18px;"></i>`;
         eqAnim.classList.remove("hidden");
+        if (artworkWrapper) artworkWrapper.classList.add("is-playing");
       } else {
         playBtn.innerHTML = `<i data-lucide="play" class="play-svg-icon" fill="black" style="width: 18px; height: 18px; transform: translate(1px, 0px);"></i>`;
         eqAnim.classList.add("hidden");
+        if (artworkWrapper) artworkWrapper.classList.remove("is-playing");
       }
       lucide.createIcons();
       this.syncActiveSongRowsHighlights();
