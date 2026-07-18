@@ -1996,7 +1996,7 @@ input, textarea {
   padding: var(--spacing-xl);
   animation: modalZoomIn 0.4s var(--transition-spring) forwards;
   z-index: var(--z-modal);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px) saturate(200%);
 }
 
 @keyframes modalZoomIn {
@@ -2363,7 +2363,7 @@ input, textarea {
    ========================================================================== */
 #song-custom-context-menu {
   background: rgba(35, 35, 35, 0.98) !important;
-  backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6) !important;
   border-radius: var(--border-radius-md) !important;
@@ -2418,7 +2418,7 @@ input, textarea {
   left: 100%;
   top: -8px;
   background: rgba(40, 40, 40, 0.98);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px) saturate(200%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--border-radius-md);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
