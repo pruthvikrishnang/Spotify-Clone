@@ -81,7 +81,7 @@ input, textarea {
   bottom: 0;
   background: var(--gradient-noise);
   background-size: 256px 256px;
-  opacity: 0.5;
+  opacity: 0.4; mix-blend-mode: overlay;
   pointer-events: none;
   z-index: 0;
 }
